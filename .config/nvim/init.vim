@@ -16,6 +16,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'easymotion/vim-easymotion'
 Plug 'airblade/vim-gitgutter'
+Plug 'posva/vim-vue'
 
 
 call plug#end()
@@ -28,6 +29,12 @@ syntax enable
 colorscheme dracula
 set number
 set relativenumber
+
+" ,/ turn off search highlighting
+nmap <leader><CR> :nohl<CR>
+
+" only underline search results
+hi Search ctermfg=NONE ctermbg=NONE cterm=underline guifg=NONE guibg=NONE gui=underline
 
 "NERDTree
 let g:NERDTreeShowHidden = 1

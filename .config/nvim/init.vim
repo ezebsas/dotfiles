@@ -29,6 +29,8 @@ syntax enable
 colorscheme dracula
 set number
 set relativenumber
+set tabstop=4 
+set shiftwidth=2 
 
 " ,/ turn off search highlighting
 nmap <leader><CR> :nohl<CR>
@@ -44,7 +46,7 @@ let g:NERDTreeStatusline = ''
 " Automaticaly close nvim if NERDTree is only thing left open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 " Toggle
-nnoremap <silent> <C-b> :NERDTreeToggle<CR>
+"nnoremap <silent> <C-b> :NERDTreeToggle<CR>
 
 "terminal
 " open new split panes to right and below
